@@ -1,0 +1,3 @@
+In this example, we are memoizing the handleClick function using useCallback, ensuring that this function retains the same reference across renders. Additionally, we use useMemo to calculate the squaredValue, ensuring that this value is recomputed only when the count dependency changes. This can enhance performance by preventing unnecessary calculations.
+
+If you were to implement a similar example without using useCallback and useMemo, functions and calculations would be recreated on every render.This can lead to performance losses as unnecessary operations are performed, and more memory is consumed.Furthermore, this situation may result in components being needlessly re - rendered, impacting page performance negatively.
